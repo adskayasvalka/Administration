@@ -7,7 +7,7 @@ local Players     = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
 -- >>> ЗАМЕНИ НА СВОЙ URL К keys.json <<<
-local KEYS_URL = "https://ТВОЙ_ХОСТИНГ/keys.json"
+local KEYS_URL = "https://raw.githubusercontent.com/adskayasvalka/Administration/main/keys.json"
 
 local RANKS = {
     ["User"]                 = 0,
