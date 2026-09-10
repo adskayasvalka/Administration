@@ -1,3 +1,12 @@
+-- проверка ключа перед загрузкой
+local ok = pcall(function()
+    return loadstring(game:HttpGet("https://raw.githubusercontent.com/adskayasvalka/Administration/main/keysystem.lua", true))()
+end)
+if not ok or not getgenv().IY_RANK then
+    warn("[IY] Доступ запрещён")
+    return
+end
+
 if IY_LOADED and not _G.IY_DEBUG == true then
 	-- error("Infinite Yield is already running!",0)
 	return
